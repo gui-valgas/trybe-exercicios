@@ -1,2 +1,2 @@
 # Meu repositório de exercícios:
-2.2:
+Dia 2.2:
