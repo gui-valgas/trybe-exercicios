@@ -1,7 +1,7 @@
 # Meu Porffólio de Exercícios!
 
 ## Aqui serão adicionados todos os exercícios do curso da Trybe,
-divididos nos seguintes Módulos:
+## divididos nos seguintes Módulos:
 
 ## -Fundamentos
 ## -Front End
