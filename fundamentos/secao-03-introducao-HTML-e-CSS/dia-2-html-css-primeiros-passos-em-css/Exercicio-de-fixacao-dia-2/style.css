@@ -27,7 +27,9 @@ h1 {
     font-family: monospace;
     font-style: italic;
     font-weight: 700;
-    line-height: 100px
+    line-height: 100px;
+    text-align: center;
+    
   }
 
   .Cor-lista {
@@ -36,10 +38,13 @@ h1 {
 
   #vermelho {
     background-color: red;
+    border-radius: 70px;
   }
   #amarelo {
     background-color: yellow;
+    border-radius: 70px;
   }
   #marrom {
     background-color:rgb(80, 33, 33);
+    border-radius: 70px;
   }
