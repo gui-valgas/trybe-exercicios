@@ -19,6 +19,7 @@ h1 {
   }
 
   ul {
+    letter-spacing: 1px;
     text-decoration: underline;
     background-color: blue;
     font-family: monospace;
