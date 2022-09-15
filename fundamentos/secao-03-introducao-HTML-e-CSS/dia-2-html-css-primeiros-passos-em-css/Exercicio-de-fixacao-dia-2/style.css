@@ -22,10 +22,11 @@ h1 {
     letter-spacing: 1px;
     text-decoration: underline;
     background-color: blue;
+    font-size: 40px;
     font-family: monospace;
     font-style: italic;
     font-weight: 700;
-    line-height: 40px
+    line-height: 100px
   }
 
   .Cor-lista {
