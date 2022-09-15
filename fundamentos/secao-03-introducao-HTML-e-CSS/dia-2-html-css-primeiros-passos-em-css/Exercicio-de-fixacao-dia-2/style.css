@@ -4,10 +4,13 @@ h1 {
     color:orange;
     font-size: 65px;
     font-family: sans-serif;
+    background-color: black;
+    padding: 15px 30px;
     }
 
   p {
-    text-shadow: 3px 3px gray;
+    color: rgb(53, 208, 219);
+    text-shadow: 3px 3px black;
     font-family: sans-serif;
     font-size: 3em;
     font-weight: 600;
