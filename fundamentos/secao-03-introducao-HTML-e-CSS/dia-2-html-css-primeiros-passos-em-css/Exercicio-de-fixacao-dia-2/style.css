@@ -1,0 +1,53 @@
+h1 {
+    text-decoration: underline;
+    text-align: center;
+    color:orange;
+    font-size: 65px;
+    font-family: sans-serif;
+    background-color: black;
+    padding: 15px 30px;
+    }
+
+  p {
+    color: rgb(53, 208, 219);
+    text-shadow: 3px 3px black;
+    font-family: sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  body {
+
+    font-size:16px;
+  }
+
+  ul {
+    letter-spacing: 1px;
+    text-decoration: underline;
+    background-color: blue;
+    font-size: 40px;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 100px;
+    text-align: center;
+    
+  }
+
+  .Cor-lista {
+    background-color:white;
+  }
+
+  #vermelho {
+    background-color: red;
+    border-radius: 70px;
+  }
+  #amarelo {
+    background-color: yellow;
+    border-radius: 70px;
+  }
+  #marrom {
+    background-color:rgb(80, 33, 33);
+    border-radius: 70px;
+  }
