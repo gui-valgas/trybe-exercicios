@@ -1,9 +1,9 @@
-# Meu Porffólio de Exercícios!
+# _Meu Porffólio de Exercícios!_
 
-## Aqui serão adicionados todos os exercícios do curso da Trybe,
-## divididos nos seguintes Módulos:
+## Aqui serão adicionados os exercícios do  
+## curso da Trybe, divididos nos seguintes Módulos:
 
-## -Fundamentos
-## -Front End
-## -Back End
-## -Ciência da Computação
+* ## Fundamentos  
+* ## Front End  
+* ## Back End  
+* ## Ciência da Computação
