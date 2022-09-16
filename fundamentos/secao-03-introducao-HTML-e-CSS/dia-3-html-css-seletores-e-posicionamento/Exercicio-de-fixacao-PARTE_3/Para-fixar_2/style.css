@@ -2,12 +2,7 @@
 
 body{
     margin: 15px;
-}
-
-h3{
-    font-size: 30px;
-    font-family: monospace;
-    text-decoration: underline;
+    font-size: 20px;
 }
 
 
@@ -16,23 +11,32 @@ div:hover{
     padding: 5px 10px;
 }
 
-div:nth-of-type(1){
+div:nth-of-type(1) > h3{
     color: rgb(255, 8, 0);
+    font-size: 30px;
 }
 
-div:nth-of-type(2){
+div:nth-of-type(2) > h3{
+    font-size: 40px;
     color: blue
 }
 
-div:nth-of-type(3){
-    color: green
+div:nth-of-type(3) > h3{
+    color: green;
+    font-family: monospace;
+    text-decoration: underline;
+    font-size: 40px;
 }
 
-div:nth-of-type(4){
-    color: rgb(64, 5, 71)
+div:nth-of-type(4) > h3{
+    color: rgb(64, 5, 71);
+    font-size: 40px;
 }
 
-div:nth-of-type(5){
+div:nth-of-type(5) > h3{
     color: aqua;
+    font-size: 30px;
 }
+
+
 
