@@ -1,0 +1,28 @@
+h1, p {
+    text-align: center;
+
+}
+
+#twitch:hover{
+    background-color: #5c16c5;
+}
+#twitch:active{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+#yt:hover, #yt:active{
+    background-color: red;
+}
+#yt:active{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+#spotify:hover{
+    background-color: green;
+}
+#spotify:active{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
