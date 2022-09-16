@@ -1,35 +1,65 @@
 h1, p {
     text-align: center;
+    font-family: monospace;
+
 
 }
 
+body{
+    background-color: aqua;
+}
 
-#twitch:hover{
+.quests{
+    font-size: 30px;
+}
+
+
+.twitch:hover{
     background-color: #5c16c5;
+    border-radius: 10px;
+    padding: 15px;
 }
 
-#twitch:active{
+.twitch:active{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
+    background-color: black;
+    color: #5c16c5;
 }
 
 
-#yt:hover, #yt:active{
+.yt:hover{
     background-color: red;
+    border-radius: 10px;
+    padding: 15px;
 }
 
-#yt:active{
+.yt:active{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
+    background-color: black;
+    color:red
 }
 
 
-#spotify:hover{
+.spotify:hover{
     background-color: green;
+    border-radius: 10px;
+    padding: 15px;
 }
 
-#spotify:active{
+.spotify:active{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
+    background-color: black;
+    color: green;
 }
+
+div{
+    list-style: none;
+    font-weight: 600;
+
+}
+
+
 
