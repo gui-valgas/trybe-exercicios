@@ -41,14 +41,36 @@ h1 {
     background-color: aliceblue;
   }
   
-  #botao {
+  #botao{
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    padding: 5px 5px;
+    padding: 5px 20px;
     display: flex;
     margin: 1px 350px;
     text-decoration: none;
     color:black
+
+  }
+
+  #botao2{
+    color:rgb(255, 255, 255);
+    font-family: monospace;
+    background-color: black;
+    border-radius: 70px;
+    text-decoration: none;
+    padding: 10px 30px;
+    
+
+  }
+
+  #botao3{
+    color:rgb(255, 255, 255);
+    font-family: monospace;
+    background-color: black;
+    border-radius: 70px;
+    text-decoration: none;
+    padding: 10px 30px;
+
 
   }
 
@@ -58,6 +80,8 @@ h1 {
     margin: 20px 20px;
     padding: 5px 5px;
   }
+
+
 
 
 
