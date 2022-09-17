@@ -3,7 +3,7 @@
 
 div:hover{
     border: thick solid rgb(0, 0, 0);
-    
+    border-radius: 20px;
 }
 
 div:nth-of-type(1) > h3{

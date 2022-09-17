@@ -10,7 +10,7 @@ body{
 }
 
 .quests{
-    font-size: 30px;
+    font-size: 50px;
 }
 
 
@@ -59,6 +59,10 @@ div{
     list-style: none;
     font-weight: 600;
 
+}
+
+li{
+    font-size: 30px;
 }
 
 
