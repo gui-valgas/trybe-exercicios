@@ -15,7 +15,7 @@
 
 ### 3 - Adicione uma imagem que está no seu computador, local.
 
-## _Exercício 3.2 - Parte II_
+## _Exercício 3.1 - Parte II_
 
 ### 1 - Crie um parágrafo para cada pessoa da sua lista.  
 
