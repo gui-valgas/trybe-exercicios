@@ -26,4 +26,53 @@ li em{
     font-weight: 900;
 }
 
+#lista-programacao li:nth-child(-n + 3){
+    color: blue
+}
 
+.java{
+    background-color: pink;
+}
+
+#lista-aliados li a:hover {
+    font-weight: 900;
+}
+
+a.linkum:link:hover {
+    color: orange;
+}
+a.linkum:visited:hover {
+    color: orange;
+}
+
+
+a.linkdois:link:hover {
+    color: green
+}
+a.linkdois:visited:hover {
+    color: green;
+}
+
+
+a.linktres:link:hover {
+    color: black
+}
+a.linktres:visited:hover {
+    color: black;
+}
+
+
+a.linkquatro:link:hover {
+    color: yellow
+}
+a.linkquatro:visited:hover {
+    color: yellow
+}
+
+
+a.linkcinco:link:hover {
+    color:green
+}
+a.linkcinco:visited:hover {
+    color: green;
+}
