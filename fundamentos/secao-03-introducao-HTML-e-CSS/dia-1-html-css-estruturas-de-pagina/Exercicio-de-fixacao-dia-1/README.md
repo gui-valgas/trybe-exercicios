@@ -1,4 +1,4 @@
-# Seção 3, Dia 2: HTML & CSS - Primeiros passos em CSS
+# Seção 3, Dia 1: HTML & CSS - Estruturas de página
 
 
 
