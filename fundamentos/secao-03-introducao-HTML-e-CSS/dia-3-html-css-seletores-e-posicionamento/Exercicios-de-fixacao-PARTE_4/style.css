@@ -4,14 +4,20 @@ ol{
    
 }
 
-li:nth-of-type(even){
+ol li:nth-of-type(even){
     color: green
 }
 
-li:nth-of-type(odd){
+ol li:nth-of-type(odd){
     text-transform: uppercase;
 }
 
-.header {
-    
+h1, h2 {
+    color: red;
 }
+
+h1 em, h2 em{
+    font-size:40px;
+    border: 1px black solid;
+}
+    
