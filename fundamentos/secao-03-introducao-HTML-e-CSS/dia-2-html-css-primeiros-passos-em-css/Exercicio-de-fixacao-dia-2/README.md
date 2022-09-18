@@ -17,7 +17,7 @@
 
 ## _Exercício 3.2 - Parte II_
 
-### 1- Modifique o família do h1 para sans-serif;  
+### 1- Modifique o font-family do h1 para sans-serif;  
 ### 2- Deixe o paragrafo com o font-weight 600;  
 ### 3- Modifique o font-size do body para 16px;  
 ### 4- Coloque o tamanho do paragrafo com o tamanho de 3 vezes o padrão do body;  
