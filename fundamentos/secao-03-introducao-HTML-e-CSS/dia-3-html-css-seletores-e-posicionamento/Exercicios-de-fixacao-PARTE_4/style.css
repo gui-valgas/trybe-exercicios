@@ -1,5 +1,5 @@
 
-ol{
+ol {
     background-color: yellow;
    
 }
@@ -21,8 +21,10 @@ h1 em, h2 em, h3 em{
     border: 1px black solid;
 }
     
+li {
+    font-size: 20px
+}
 li em{
-    font-size: 20px;
     font-weight: 900;
 }
 
