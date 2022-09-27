@@ -11,9 +11,10 @@ function palindromo (palavra) {
 
 }
 
-let palavra = 'omissíssimo' 
+let palavra = 'arara' 
 console.log(palindromo(palavra))
-
+palavra = 'desenvolvimento'
+console.log(palindromo(palavra))
 
 //Utilizando split, reverse e join:
 
@@ -27,3 +28,4 @@ function palindromo (palavras) {
 }
 
 console.log(palindromo('arara'))
+console.log(palindromo('desenvolvimento'))
