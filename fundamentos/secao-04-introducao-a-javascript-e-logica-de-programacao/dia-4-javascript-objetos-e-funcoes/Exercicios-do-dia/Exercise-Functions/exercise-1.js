@@ -13,3 +13,17 @@ function palindromo (palavra) {
 
 let palavra = 'omissíssimo' 
 console.log(palindromo(palavra))
+
+
+//Utilizando split, reverse e join:
+
+function palindromo (palavras) {
+  let reverse = palavras.split('').reverse().join('');
+  if (reverse === palavras) {
+    return 'Sim, é palíndromo'
+  } else {
+    return 'Não é palíndromo'
+  }
+}
+
+console.log(palindromo('arara'))
