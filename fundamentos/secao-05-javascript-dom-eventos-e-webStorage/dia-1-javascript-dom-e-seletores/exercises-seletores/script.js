@@ -1,7 +1,7 @@
-let header = document.getElementById('header-container');
+let header = document.querySelector('#header-container');
 header.style.backgroundColor = 'green';
 
-let emergency = document.getElementsByClassName('emergency-tasks')[0]
+let emergency = document.querySelector('.emergency-tasks')
 emergency.style.backgroundColor = 'lightpink'
 
 let emergencyTitles = document.querySelectorAll('.emergency-tasks h3');
