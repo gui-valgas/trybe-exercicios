@@ -17,5 +17,5 @@ for (let index = 0; index < noEmergencyTasksTitles.length; index += 1) {
   noEmergencyTasksTitles[index].style.backgroundColor = 'rgb(35, 37, 37)';
 }
 
-let footer = document.getElementById('footer-container');
+let footer = document.querySelector('#footer-container');
 footer.style.backgroundColor = 'rgb(0, 53, 51)'
