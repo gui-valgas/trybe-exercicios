@@ -13,8 +13,8 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 
-// Escreva seu código abaixo.
 
+//Parte 1
 let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
 function criaDiasDoMes() {
@@ -27,30 +27,47 @@ function criaDiasDoMes() {
 
     if (dia === 24 || dia === 31) {
       itemDia.className = 'day holiday';
-      listaDosDias.appendChild(itemDia)
     } else if ( dia === 4 || dia === 11 || dia === 18){
       itemDia.className = 'day friday';
-      listaDosDias.appendChild(itemDia)
     } else if ( dia === 25) {
       itemDia.className = 'day friday holiday';
-      listaDosDias.appendChild(itemDia)
-    } else {
-      itemDia.className = 'day'
-      listaDosDias.appendChild(itemDia)
-    }
-}
+    } 
+
+    listaDosDias.appendChild(itemDia)
+  }
 }
 
 criaDiasDoMes();
 
-function criaBotaoFeriados(feriados) {
- let button = document.getElementById('botao');
- let novoBotao = document.createElement('button');
- novoBotao.id = 'btn-holiday'
-
- novoBotao.innerHTML = feriados
+//Parte 2
+function criaBotaoFeriados(string) {
+  let novoBotao = document.createElement('button');
+  novoBotao.id = 'btn-holiday'
+  novoBotao.innerHTML = string
  
+  let botaoFeriados = document.querySelector('.buttons-container');
 
- button.appendChild(novoBotao)
+  botaoFeriados.appendChild(novoBotao);
 }
 criaBotaoFeriados('feriados')
+
+//Parte 3
+
+function mostraFeriados() {
+  let feriados = document.querySelectorAll('.holiday')
+  let botao = document.querySelector('#btn-holiday')
+
+  botao.addEventListener('click', function(){
+    for (let index =0; index < feriados.length; index += 1) {
+      if (feriados[index].style.backgroundColor === 'lightgreen') {
+        feriados[index].style.backgroundColor = 'rgb(238,238,238)'
+      } else {
+        feriados[index].style.backgroundColor = 'lightgreen'
+      }
+    }
+  })
+}
+mostraFeriados()
+
+//Parte 4
+
