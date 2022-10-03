@@ -44,5 +44,13 @@ function criaDiasDoMes() {
 criaDiasDoMes();
 
 function criaBotaoFeriados(feriados) {
+ let button = document.getElementById('botao');
+ let novoBotao = document.createElement('button');
+ novoBotao.id = 'btn-holiday'
 
+ novoBotao.innerHTML = feriados
+ 
+
+ button.appendChild(novoBotao)
 }
+criaBotaoFeriados('feriados')
