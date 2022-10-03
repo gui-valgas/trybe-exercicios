@@ -50,40 +50,40 @@
       1. Crie e execute uma função que mude o texto na tag `<p>-----</p>`, para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)  */
       function mudaTexto() {
       let paragrafo = document.getElementsByTagName('p')[1]
-      return paragrafo.innerText = 'Daqui 2 anos estarei trabalhando como desenvolvedor web!!!'
+      return paragrafo.innerHTML = 'Daqui 2 anos estarei trabalhando como desenvolvedor web!!!'
       }
       
       mudaTexto()
       /* 2. Crie e execute uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).*/
       function mudaCor(){
-        let mainC = document.getElementsByClassName('main-content')[0]
+        let mainC = document.querySelector('.main-content')
         mainC.style.backgroundColor = 'rgb(76,164,109)'
       } 
 
       mudaCor()
       /* 3. Crie e execute uma função que mude a cor do quadrado vermelho para branco.*/
       function changeColor() {
-        let redQuad = document.getElementsByTagName('section')[0]
+        let redQuad = document.querySelector('section')
         redQuad.style.backgroundColor = 'white'
         }
         changeColor()
       
      /*  4. Crie e execute uma função que corrija o texto da tag <h1>.*/
       function corrigeTexto() {
-        let fixText = document.getElementsByTagName('h1')[0]
-        fixText.innerHTML = 'Exercício - JavaScript'
+        let fixText = document.querySelector('h1')
+        fixText.innerHTML = 'Exercício - JavaScript :)'
       }
       corrigeTexto()
       /*5. Crie e execute uma função que modifique o texto da primeira tag <p> para maiúsculo.*/
       function changeText() {
-        let changeP = document.getElementsByTagName('p')[0]
+        let changeP = document.querySelectorAll('p')[0]
         changeP.innerText = changeP.innerHTML.toUpperCase();
       }
       changeText()
       /*6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
       */  
      function exibeParagrafo() {
-      let exibeP = document.getElementsByTagName('p') 
+      let exibeP = document.querySelectorAll('p') 
         for (let index = 0; index < exibeP.length; index += 1) {
           console.log(exibeP[index].innerText)
         }
