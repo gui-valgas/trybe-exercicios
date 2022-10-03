@@ -45,9 +45,9 @@ function criaBotaoFeriados(string) {
   novoBotao.id = 'btn-holiday'
   novoBotao.innerHTML = string
  
-  let botaoFeriados = document.querySelector('.buttons-container');
+  let buttonsContainer = document.querySelector('.buttons-container');
 
-  botaoFeriados.appendChild(novoBotao);
+  buttonsContainer.appendChild(novoBotao);
 }
 criaBotaoFeriados('feriados')
 
@@ -71,3 +71,13 @@ mostraFeriados()
 
 //Parte 4
 
+function criaSextou (string) {
+  let botaoSexta = document.createElement('button');
+  botaoSexta.id = 'btn-friday';
+  botaoSexta.innerHTML = string;
+  let buttonsContainer = document.querySelector('.buttons-container');
+
+  buttonsContainer.appendChild(botaoSexta)
+
+}
+criaSextou('Sexta-feira');
