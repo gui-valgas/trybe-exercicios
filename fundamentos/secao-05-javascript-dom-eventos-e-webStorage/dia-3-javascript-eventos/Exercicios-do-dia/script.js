@@ -79,5 +79,16 @@ function criaSextou (string) {
 
   buttonsContainer.appendChild(botaoSexta)
 
+//parte 5
+let fridaysList = document.querySelectorAll('.friday')
+console.log(fridaysList)
+  botaoSexta.addEventListener('click', function(){
+    for (let index = 0; index < fridaysList.length; index +=1) {
+      
+
+    }
+  })
 }
 criaSextou('Sexta-feira');
+
+
