@@ -10,11 +10,6 @@ window.onload = function () {
         let containerTexto = document.querySelector('.container')
         containerTexto.style.backgroundColor = event.target.innerText
 
-        // if (event.target.innerText === 'black') {
-        //   containerTexto.style.color = 'white'
-        // } else {
-        //   containerTexto.style.color = 'black'
-        // }
         localStorage.setItem('background-color', event.target.innerText)
       })
     }
@@ -22,7 +17,7 @@ window.onload = function () {
   changeBackground()
 
 
-//cor do texto
+  //cor do texto
   function textColorChange() {
     let textColorContainer = document.querySelectorAll('#font-color > button')
 
@@ -37,88 +32,78 @@ window.onload = function () {
   }
   textColorChange()
 
-//fonte
-  function setFontSize(size) {
-    let paragraphs = document.querySelectorAll("#texto")
-    for (let index = 0; index < paragraphs.length; index += 1) {
-      paragraphs[index].style.fontSize = size
+  //tamanho da fonte
+
+  function fonteTexto() {
+    let containerTexto = document.querySelectorAll('#font-size > button')
+    for (let index = 0; index < containerTexto.length; index += 1) {
+      containerTexto[index].addEventListener('click', function (event) {
+        let spanContainer = document.querySelector('#texto')
+        spanContainer.style.fontSize = event.target.innerHTML
+
+        localStorage.setItem('font-size', event.target.innerHTML)
+      })
+
     }
-    localStorage.setItem("fontSize", size)
+
   }
-  let fontSizeButtons = document.querySelectorAll("#font-size>button")
-  for (let index = 0; index < fontSizeButtons.length; index += 1) {
-    fontSizeButtons[index].addEventListener("click", function (event) {
-      setFontSize(event.target.innerHTML)
-    })
+  fonteTexto()
+
+  //espaçamento
+
+
+
+  function setHeight() {
+    let textoContainer = document.querySelectorAll('#line-height>button')
+
+    for (let index = 0; index < textoContainer.length; index += 1) {
+      textoContainer[index].addEventListener('click', function (event) {
+        let texto = document.querySelector('#texto')
+        texto.style.lineHeight = event.target.innerHTML
+
+        localStorage.setItem('line-height', event.target.innerHTML)
+      })
+    }
   }
-  setFontSize()
+  setHeight()
 
 
-  //   let containerTexto = document.querySelectorAll('#font-size > button')
-  //   for (let index = 0; index < containerTexto.length; index += 1) {
-  //     containerTexto[index].addEventListener('click', function (event) {
-  //       let spanContainer = document.querySelector('#texto')
-  //       let span = spanContainer.innerHTML
-  //       if (event.target.id === '#fonte1' ) {
-  //         span.style.fontSize = 8 + 'px'
-  //       }
-  //     })
-  //   }
-  // }
+  //tipo da fonte
 
-//espaçamento
+  function setFontFamily () {
+    let fontContainer = document.querySelectorAll('#font-family>button')
 
-function setLineHeight(height) {
-  let paragraphs = document.querySelectorAll("#texto")
-  for (let index = 0; index < paragraphs.length; index += 1) {
-    paragraphs[index].style.lineHeight = height
+    for (let index = 0; index < fontContainer.length; index += 1) {
+      fontContainer[index].addEventListener('click', function(event){
+        let botaoFont = document.querySelector('#texto')
+        botaoFont.style.fontFamily = event.target.innerHTML
+
+        localStorage.setItem('font-family', event.target.innerHTML)
+      })
+    }
   }
-  localStorage.setItem("lineHeight", height)
-}
+setFontFamily()
 
-let lineHeightButtons = document.querySelectorAll("#line-height>button")
-      for (let index = 0; index < lineHeightButtons.length; index += 1) {
-        lineHeightButtons[index].addEventListener("click", function(event) {
-          setLineHeight(event.target.innerHTML)
-        })
-      }
-}
+  function webStorage() {
+    let backgroundColor = localStorage.getItem('background-color')
+    let containerTexto = document.querySelector('.container')
+    containerTexto.style.backgroundColor = backgroundColor
 
-//tipo da fonte
-function setFontFamily(family) {
-  let paragraphs = document.querySelectorAll("#texto")
-  for (let index = 0; index < paragraphs.length; index += 1) {
-    paragraphs[index].style.fontFamily = family
+
+    let colorText = localStorage.getItem('font-color')
+    let texto = document.querySelector('#texto')
+    texto.style.color = colorText
+
+    let fontSize = localStorage.getItem('font-size')
+    texto.style.fontSize = fontSize
+
+    let lineHeight = localStorage.getItem('line-height')
+    texto.style.lineHeight = lineHeight
+
+    let fontFamily = localStorage.getItem('font-family')
+    texto.style.fontFamily = fontFamily
+
   }
-  localStorage.setItem("fontFamily", family)
+
+  webStorage();
 }
-let fontFamilyButtons = document.querySelectorAll("#font-family>button")
-      for (let index = 0; index < fontFamilyButtons.length; index += 1) {
-        fontFamilyButtons[index].addEventListener("click", function(event) {
-          setFontFamily(event.target.innerHTML)
-        })
-      }
-
-
-function webStorage() {
-  let backgroundColor = localStorage.getItem('background-color')
-  let containerTexto = document.querySelector('.container')
-  containerTexto.style.backgroundColor = backgroundColor
-
-
-  let colorText = localStorage.getItem('font-color')
-  let texto = document.querySelector('#texto')
-  texto.style.color = colorText
-
-  // if (backgroundColor === 'black') {
-  //   containerTexto.style.color = 'white'
-  // } else {
-  //   containerTexto.style.color = 'black'
-  // }
-
-  let fontSize = localStorage.getItem("fontSize")
-  if (fontSize) setFontSize(fontSize)
-
-}
-
-webStorage()
