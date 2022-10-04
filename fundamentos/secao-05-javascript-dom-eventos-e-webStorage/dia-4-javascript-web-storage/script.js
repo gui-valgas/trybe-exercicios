@@ -1,4 +1,6 @@
 window.onload = function () {
+
+  //cor background
   function changeBackground() {
     let listaBotoes = document.querySelectorAll('#background-color > button')
 
@@ -20,7 +22,7 @@ window.onload = function () {
   changeBackground()
 
 
-
+//cor do texto
   function textColorChange() {
     let textColorContainer = document.querySelectorAll('#font-color > button')
 
@@ -35,7 +37,7 @@ window.onload = function () {
   }
   textColorChange()
 
-
+//fonte
   function setFontSize(size) {
     let paragraphs = document.querySelectorAll("#texto")
     for (let index = 0; index < paragraphs.length; index += 1) {
@@ -51,6 +53,7 @@ window.onload = function () {
   }
   setFontSize()
 
+
   //   let containerTexto = document.querySelectorAll('#font-size > button')
   //   for (let index = 0; index < containerTexto.length; index += 1) {
   //     containerTexto[index].addEventListener('click', function (event) {
@@ -63,8 +66,38 @@ window.onload = function () {
   //   }
   // }
 
+//espaçamento
 
+function setLineHeight(height) {
+  let paragraphs = document.querySelectorAll("#texto")
+  for (let index = 0; index < paragraphs.length; index += 1) {
+    paragraphs[index].style.lineHeight = height
+  }
+  localStorage.setItem("lineHeight", height)
 }
+
+let lineHeightButtons = document.querySelectorAll("#line-height>button")
+      for (let index = 0; index < lineHeightButtons.length; index += 1) {
+        lineHeightButtons[index].addEventListener("click", function(event) {
+          setLineHeight(event.target.innerHTML)
+        })
+      }
+}
+
+//tipo da fonte
+function setFontFamily(family) {
+  let paragraphs = document.querySelectorAll("#texto")
+  for (let index = 0; index < paragraphs.length; index += 1) {
+    paragraphs[index].style.fontFamily = family
+  }
+  localStorage.setItem("fontFamily", family)
+}
+let fontFamilyButtons = document.querySelectorAll("#font-family>button")
+      for (let index = 0; index < fontFamilyButtons.length; index += 1) {
+        fontFamilyButtons[index].addEventListener("click", function(event) {
+          setFontFamily(event.target.innerHTML)
+        })
+      }
 
 
 function webStorage() {
