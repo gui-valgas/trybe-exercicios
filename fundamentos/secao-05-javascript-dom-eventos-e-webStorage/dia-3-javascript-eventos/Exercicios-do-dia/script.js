@@ -27,11 +27,11 @@ function criaDiasDoMes() {
 
     if (dia === 24 || dia === 31) {
       itemDia.className = 'day holiday';
-    } else if ( dia === 4 || dia === 11 || dia === 18){
+    } else if (dia === 4 || dia === 11 || dia === 18) {
       itemDia.className = 'day friday';
-    } else if ( dia === 25) {
+    } else if (dia === 25) {
       itemDia.className = 'day friday holiday';
-    } 
+    }
 
     listaDosDias.appendChild(itemDia)
   }
@@ -44,7 +44,7 @@ function criaBotaoFeriados(string) {
   let novoBotao = document.createElement('button');
   novoBotao.id = 'btn-holiday'
   novoBotao.innerHTML = string
- 
+
   let buttonsContainer = document.querySelector('.buttons-container');
 
   buttonsContainer.appendChild(novoBotao);
@@ -57,8 +57,8 @@ function mostraFeriados() {
   let feriados = document.querySelectorAll('.holiday')
   let botao = document.querySelector('#btn-holiday')
 
-  botao.addEventListener('click', function(){
-    for (let index =0; index < feriados.length; index += 1) {
+  botao.addEventListener('click', function () {
+    for (let index = 0; index < feriados.length; index += 1) {
       if (feriados[index].style.backgroundColor === 'lightgreen') {
         feriados[index].style.backgroundColor = 'rgb(238,238,238)'
       } else {
@@ -71,7 +71,7 @@ mostraFeriados()
 
 //Parte 4
 
-function criaSextou (string) {
+function criaSextou(string) {
   let botaoSexta = document.createElement('button');
   botaoSexta.id = 'btn-friday';
   botaoSexta.innerHTML = string;
@@ -79,16 +79,21 @@ function criaSextou (string) {
 
   buttonsContainer.appendChild(botaoSexta)
 
-//parte 5
-let fridaysList = document.querySelectorAll('.friday')
-console.log(fridaysList)
-  botaoSexta.addEventListener('click', function(){
-    for (let index = 0; index < fridaysList.length; index +=1) {
-      
-
+  //Parte 5
+  let fridaysList = document.querySelectorAll('.friday')
+  let aux = [4, 11, 18, 25]
+  botaoSexta.addEventListener('click', function () {
+    for (let index = 0; index < fridaysList.length; index += 1) {
+      if (fridaysList[index].innerText != 'SEXTOU!') {
+        fridaysList[index].innerText = 'SEXTOU!';
+      } else {
+        fridaysList[index].innerText = aux[index]
+      }
     }
   })
 }
 criaSextou('Sexta-feira');
+
+//Parte 6
 
 
