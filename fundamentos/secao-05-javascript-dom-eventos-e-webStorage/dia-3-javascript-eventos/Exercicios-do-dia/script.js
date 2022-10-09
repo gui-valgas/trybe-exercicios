@@ -100,7 +100,7 @@ function zoomMouseOver() {
   let days = document.querySelector('#days');
   days.addEventListener('mouseover', (event) => {
     const element = event.target;
-    element.style.fontSize = '50px';
+    element.style.fontSize = '30px';
     element.style.fontWeight = '600'
   })
 }
@@ -141,3 +141,74 @@ function addTaskSubtitles(color) {
 
 }
 addTaskSubtitles('red')
+
+//Parte 9
+
+function selectTask() {
+  const getTask = document.querySelector('.task');
+
+  getTask.addEventListener('click', (event) => {
+    const element = event.target;
+    if (element.className === 'task') {
+      element.classList.add('selected')
+    } else {
+      element.className = 'task'
+    }
+
+  })
+}
+selectTask();
+
+// Parte 10 
+
+function tagDay() {
+  let days = document.querySelector('#days')
+  let selectedTask = document.getElementsByClassName('task selected');
+  let taskDiv = document.querySelector('.task');
+  let taskColor = taskDiv.style.backgroundColor;
+
+
+  days.addEventListener('click', (event) => {
+    element = event.target;
+    let targetColor = element.style.color;
+    let eventTargetColor = event.target.style.color;
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      element.style.color = color
+    } else if (targetColor === taskDiv.style.backgroundColor) {
+      element.style.color = 'rgb(119,119,119'
+    }
+
+  })
+}
+tagDay()
+
+//BONUS
+
+function addNewCommits() {
+  let taskList = document.querySelector('.task-list')
+  let getInput = document.querySelector('#task-input');
+  let inputButton = document.querySelector('#btn-add');
+
+  inputButton.addEventListener('click', () => {
+    if(getInput.value.length > 0) {
+      let li = document.createElement('li');
+      li.innerText = getInput.value;
+
+      taskList.appendChild(li)
+      getInput.value = '';
+    } else {
+      alert('Error: nenhum novo compromisso!')
+    }
+  })
+  getInput.addEventListener('keyup', (event) => {
+    if (event.key === 'Enter' && getInput.value.length > 0) {
+      let li = document.createElement('li');
+      li.innerText = getInput.value;
+
+      taskList.appendChild(li);
+      getInput.value = '';
+    }
+  })
+}
+addNewCommits();
