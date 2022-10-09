@@ -153,3 +153,9 @@ label {
   margin: 0px;
   padding: 10px 0;
 }
+
+#tarefa1 {
+  font-size: 25px;
+  border: 1px rgb(250, 8, 0) solid;
+  padding: 10px;
+}

@@ -57,7 +57,7 @@ function mostraFeriados() {
   let feriados = document.querySelectorAll('.holiday')
   let botao = document.querySelector('#btn-holiday')
 
-  botao.addEventListener('click', function () {
+  botao.addEventListener('click', () => {
     for (let index = 0; index < feriados.length; index += 1) {
       if (feriados[index].style.backgroundColor === 'lightgreen') {
         feriados[index].style.backgroundColor = 'rgb(238,238,238)'
@@ -81,13 +81,13 @@ function criaSextou(string) {
 
   //Parte 5
   let fridaysList = document.querySelectorAll('.friday')
-  let aux = [4, 11, 18, 25]
-  botaoSexta.addEventListener('click', function () {
+  let sextaFeiras = [4, 11, 18, 25]
+  botaoSexta.addEventListener('click', () => {
     for (let index = 0; index < fridaysList.length; index += 1) {
       if (fridaysList[index].innerText != 'SEXTOU!') {
         fridaysList[index].innerText = 'SEXTOU!';
       } else {
-        fridaysList[index].innerText = aux[index]
+        fridaysList[index].innerText = sextaFeiras[index]
       }
     }
   })
@@ -96,4 +96,48 @@ criaSextou('Sexta-feira');
 
 //Parte 6
 
+function zoomMouseOver() {
+  let days = document.querySelector('#days');
+  days.addEventListener('mouseover', (event) => {
+    const element = event.target;
+    element.style.fontSize = '50px';
+    element.style.fontWeight = '600'
+  })
+}
+zoomMouseOver()
 
+function zoomMouseOut() {
+  let days = document.querySelector('#days');
+  days.addEventListener('mouseout', (event) => {
+    const element = event.target;
+    element.style.fontSize = '20px'
+    element.style.fontWeight = '200'
+  })
+}
+zoomMouseOut();
+
+//Parte 7
+
+function newTask(task) {
+  let taskList = document.querySelector('.my-tasks');
+  let newTasks = document.createElement('span');
+  newTasks.id = 'tarefa1'
+
+  newTasks.innerHTML = task;
+  taskList.appendChild(newTasks);
+}
+newTask('Finalizar projeto Pixel-Art!')
+
+//Parte 8
+
+function addTaskSubtitles(color) {
+  const taskList = document.querySelector('.my-tasks')
+  const subtitle = document.createElement('div')
+  subtitle.classList.add('task');
+  subtitle.style.backgroundColor = color;
+
+  taskList.appendChild(subtitle);
+
+
+}
+addTaskSubtitles('red')
