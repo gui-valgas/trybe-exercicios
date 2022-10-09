@@ -27,11 +27,11 @@ function criaDiasDoMes() {
 
     if (dia === 24 || dia === 31) {
       itemDia.className = 'day holiday';
-    } else if ( dia === 4 || dia === 11 || dia === 18){
+    } else if (dia === 4 || dia === 11 || dia === 18) {
       itemDia.className = 'day friday';
-    } else if ( dia === 25) {
+    } else if (dia === 25) {
       itemDia.className = 'day friday holiday';
-    } 
+    }
 
     listaDosDias.appendChild(itemDia)
   }
@@ -44,7 +44,7 @@ function criaBotaoFeriados(string) {
   let novoBotao = document.createElement('button');
   novoBotao.id = 'btn-holiday'
   novoBotao.innerHTML = string
- 
+
   let buttonsContainer = document.querySelector('.buttons-container');
 
   buttonsContainer.appendChild(novoBotao);
@@ -57,8 +57,8 @@ function mostraFeriados() {
   let feriados = document.querySelectorAll('.holiday')
   let botao = document.querySelector('#btn-holiday')
 
-  botao.addEventListener('click', function(){
-    for (let index =0; index < feriados.length; index += 1) {
+  botao.addEventListener('click', () => {
+    for (let index = 0; index < feriados.length; index += 1) {
       if (feriados[index].style.backgroundColor === 'lightgreen') {
         feriados[index].style.backgroundColor = 'rgb(238,238,238)'
       } else {
@@ -71,7 +71,7 @@ mostraFeriados()
 
 //Parte 4
 
-function criaSextou (string) {
+function criaSextou(string) {
   let botaoSexta = document.createElement('button');
   botaoSexta.id = 'btn-friday';
   botaoSexta.innerHTML = string;
@@ -79,16 +79,136 @@ function criaSextou (string) {
 
   buttonsContainer.appendChild(botaoSexta)
 
-//parte 5
-let fridaysList = document.querySelectorAll('.friday')
-console.log(fridaysList)
-  botaoSexta.addEventListener('click', function(){
-    for (let index = 0; index < fridaysList.length; index +=1) {
-      
-
+  //Parte 5
+  let fridaysList = document.querySelectorAll('.friday')
+  let sextaFeiras = [4, 11, 18, 25]
+  botaoSexta.addEventListener('click', () => {
+    for (let index = 0; index < fridaysList.length; index += 1) {
+      if (fridaysList[index].innerText != 'SEXTOU!') {
+        fridaysList[index].innerText = 'SEXTOU!';
+      } else {
+        fridaysList[index].innerText = sextaFeiras[index]
+      }
     }
   })
 }
 criaSextou('Sexta-feira');
 
+//Parte 6
 
+function zoomMouseOver() {
+  let days = document.querySelector('#days');
+  days.addEventListener('mouseover', (event) => {
+    const element = event.target;
+    element.style.fontSize = '30px';
+    element.style.fontWeight = '600'
+  })
+}
+zoomMouseOver()
+
+function zoomMouseOut() {
+  let days = document.querySelector('#days');
+  days.addEventListener('mouseout', (event) => {
+    const element = event.target;
+    element.style.fontSize = '20px'
+    element.style.fontWeight = '200'
+  })
+}
+zoomMouseOut();
+
+//Parte 7
+
+function newTask(task) {
+  let taskList = document.querySelector('.my-tasks');
+  let newTasks = document.createElement('span');
+  newTasks.id = 'tarefa1'
+
+  newTasks.innerHTML = task;
+  taskList.appendChild(newTasks);
+}
+newTask('Finalizar projeto Pixel-Art!')
+
+//Parte 8
+
+function addTaskSubtitles(color) {
+  const taskList = document.querySelector('.my-tasks')
+  const subtitle = document.createElement('div')
+  subtitle.classList.add('task');
+  subtitle.style.backgroundColor = color;
+
+  taskList.appendChild(subtitle);
+
+
+}
+addTaskSubtitles('red')
+
+//Parte 9
+
+function selectTask() {
+  const getTask = document.querySelector('.task');
+
+  getTask.addEventListener('click', (event) => {
+    const element = event.target;
+    if (element.className === 'task') {
+      element.classList.add('selected')
+    } else {
+      element.className = 'task'
+    }
+
+  })
+}
+selectTask();
+
+// Parte 10 
+
+function tagDay() {
+  let days = document.querySelector('#days')
+  let selectedTask = document.getElementsByClassName('task selected');
+  let taskDiv = document.querySelector('.task');
+  let taskColor = taskDiv.style.backgroundColor;
+
+
+  days.addEventListener('click', (event) => {
+    element = event.target;
+    let targetColor = element.style.color;
+    let eventTargetColor = event.target.style.color;
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      element.style.color = color
+    } else if (targetColor === taskDiv.style.backgroundColor) {
+      element.style.color = 'rgb(119,119,119'
+    }
+
+  })
+}
+tagDay()
+
+//BONUS
+
+function addNewCommits() {
+  let taskList = document.querySelector('.task-list')
+  let getInput = document.querySelector('#task-input');
+  let inputButton = document.querySelector('#btn-add');
+
+  inputButton.addEventListener('click', () => {
+    if(getInput.value.length > 0) {
+      let li = document.createElement('li');
+      li.innerText = getInput.value;
+
+      taskList.appendChild(li)
+      getInput.value = '';
+    } else {
+      alert('Error: nenhum novo compromisso!')
+    }
+  })
+  getInput.addEventListener('keyup', (event) => {
+    if (event.key === 'Enter' && getInput.value.length > 0) {
+      let li = document.createElement('li');
+      li.innerText = getInput.value;
+
+      taskList.appendChild(li);
+      getInput.value = '';
+    }
+  })
+}
+addNewCommits();
