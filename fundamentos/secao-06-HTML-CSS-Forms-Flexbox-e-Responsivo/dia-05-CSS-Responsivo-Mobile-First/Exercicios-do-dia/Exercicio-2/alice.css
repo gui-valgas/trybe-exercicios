@@ -2,6 +2,88 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 5px;
+  background-color: rgb(177, 219, 255);
+}
+
+h1 {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  border: 10px dashed rgb(213, 133, 229);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+nav {
+  display: none;
+}
+
+.h2-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px
+}
+
+.h2-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.aside-container {
+  display: flex;
+  background-color: rgb(207, 252, 237);
+  flex-flow: row nowrap;
+  border-radius: 20px;
+  margin: 20px 10px;
+}
+
+.aside-one {
+  font: 20px sans-serif;
+  margin: 10px;
+}
+
+.aside-two {
+  font: 20px sans-serif;
+}
+
+.subtitle {
+  font-size: 28px;
+  padding: 5px;
+}
+
+.main-content {
+  border: 5px dotted rgb(213, 133, 229);
+  border-radius: 10px;
+  margin: 3px;
+  padding: 5px;
+  font: 20px fuzzy Bubbles;
+}
+
+footer {
+  background-color: rgb(207, 252, 237);
+  border-radius: 10px;
+  border: 2px solid pink;
+  padding: 10px;
+  font: 12px monospace;
+}
+
+@media screen and (min-width: 800px) {
+
+
+  footer {
+    background-color: rgb(207, 252, 237);
+    border-radius: 10px;
+    border: 2px solid pink;
+    font: 15px monospace;
+  }
+
 }
