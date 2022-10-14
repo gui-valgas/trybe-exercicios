@@ -9,18 +9,27 @@ html {
 }
 
 body {
-  margin: 5px;
   background-color: rgb(177, 219, 255);
 }
 
-h1 {
+.title {
   display: flex;
-  margin: 20px;
   justify-content: center;
   border: 10px dashed rgb(213, 133, 229);
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
+  font: 30px fuzzy bubbles;
+  text-decoration: underline;
 }
+
+/* .subtitle {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  padding: 5px;
+  border: 10px dashed rgb(213, 133, 229);
+  border-radius: 10px;
+} */
 
 nav {
   display: none;
@@ -29,43 +38,50 @@ nav {
 .h2-1 {
   display: flex;
   justify-content: center;
-  margin-top: 10px
+  margin-top: 10px;
+  font-size: 22px;
 }
 
 .h2-2 {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  font-size: 22px;
 }
 
 .aside-container {
   display: flex;
   background-color: rgb(207, 252, 237);
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   border-radius: 20px;
   margin: 20px 10px;
 }
 
 .aside-one {
-  font: 20px sans-serif;
+  font: 20px fuzzy bubbles;
   margin: 10px;
 }
 
 .aside-two {
-  font: 20px sans-serif;
+  font: 20px fuzzy bubbles;
 }
 
-.subtitle {
-  font-size: 28px;
-  padding: 5px;
-}
 
 .main-content {
   border: 5px dotted rgb(213, 133, 229);
   border-radius: 10px;
   margin: 3px;
   padding: 5px;
-  font: 20px fuzzy Bubbles;
+  font: 22px fuzzy Bubbles;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding: 5px;
+  border: 10px dashed rgb(213, 133, 229);
+  border-radius: 10px;
 }
 
 footer {
@@ -73,17 +89,186 @@ footer {
   border-radius: 10px;
   border: 2px solid pink;
   padding: 10px;
-  font: 12px monospace;
+  font: 15px monospace;
 }
 
-@media screen and (min-width: 800px) {
 
+@media screen and (min-width: 800px) {
+  .title {
+    display: flex;
+    justify-content: center;
+    border: 15px dashed rgb(213, 133, 229);
+    border-radius: 10px;
+    padding: 15px;
+    font: 42px fuzzy bubbles;
+    text-decoration: underline;
+  }
+
+  .subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 5px;
+    border: 10px dashed rgb(213, 133, 229);
+    border-radius: 10px;
+  }
+
+
+  nav {
+    display: flex;
+    font: 30px fuzzy bubbles;
+    justify-content: center;
+  }
+
+  .nav-links>li {
+    display: inline;
+    font-size: 40px;
+    margin: 20px 60px;
+  }
+
+  .h2-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 40px;
+  }
+
+  .h2-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 40px;
+  }
+
+  .aside-container {
+    display: flex;
+    background-color: rgb(207, 252, 237);
+    flex-flow: row nowrap;
+    border-radius: 20px;
+    margin: 10px 15px;
+  }
+
+  .aside-one {
+    font: 35px fuzzy bubbles;
+    margin: 10px;
+  }
+
+  .aside-two {
+    font: 35px fuzzy bubbles;
+  }
+
+
+  .subtitle {
+    font-size: 35px;
+    padding: 15px;
+    border: 10px dashed rgb(213, 133, 229);
+  }
+
+  .main-content {
+    border: 6px dotted rgb(213, 133, 229);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    font: 25px fuzzy Bubbles;
+  }
 
   footer {
     background-color: rgb(207, 252, 237);
     border-radius: 10px;
-    border: 2px solid pink;
+    border: 5px solid pink;
     font: 15px monospace;
   }
+
+}
+
+@media screen and (min-width: 1600px) {
+  .title {
+    display: flex;
+    justify-content: center;
+    border: 15px dashed rgb(213, 133, 229);
+    border-radius: 10px;
+    padding: 15px;
+    font: 90px fuzzy bubbles;
+    text-decoration: underline;
+  }
+
+  .subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    padding: 5px;
+    border: 10px dashed rgb(213, 133, 229);
+    border-radius: 10px;
+  }
+
+  nav {
+    display: flex;
+    font: 20px fuzzy bubbles;
+    justify-content: center;
+    margin-bottom: 40px;
+    border: 2px dotted rgb(213, 133, 229);
+  }
+
+  .nav-links>li {
+    display: inline;
+    margin: 20px 150px;
+    font-size: 60px;
+  }
+
+  .h2-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 60px;
+  }
+
+  .h2-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 60px;
+  }
+
+  .aside-container {
+    display: flex;
+    background-color: rgb(207, 252, 237);
+    justify-content: center;
+    flex-flow: row nowrap;
+    border-radius: 20px;
+    margin: 10px 15px;
+  }
+
+  .aside-one {
+    font: 40px fuzzy bubbles;
+    margin: 10px;
+  }
+
+  .aside-two {
+    font: 40px fuzzy bubbles;
+  }
+
+
+  .subtitle {
+    font-size: 70px;
+    padding: 15px;
+    border: 10px dashed rgb(213, 133, 229);
+  }
+
+  .main-content {
+    border: 6px dotted rgb(213, 133, 229);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    font: 40px fuzzy Bubbles;
+  }
+
+  footer {
+    background-color: rgb(207, 252, 237);
+    border-radius: 10px;
+    border: 5px solid pink;
+    font: 20px monospace;
+    margin-top: 20px;
+  }
+
 
 }
