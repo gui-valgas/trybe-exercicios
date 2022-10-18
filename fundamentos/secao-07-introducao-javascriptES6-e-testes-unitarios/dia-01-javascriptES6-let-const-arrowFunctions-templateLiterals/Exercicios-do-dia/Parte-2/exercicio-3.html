@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercicio-3</title>
+</head>
+
+<body>
+  <main>
+
+    <button id="botao">Contagem de Clicks</button>
+    <span id="number-clicks">0</span>
+    <button id="reset">Reset Count</button>
+  </main>
+  <script>
+    const contagemClicks = () => {
+      const botao = document.querySelector('#botao');
+      const numberClicks = document.querySelector('#number-clicks');
+      const botaoReset = document.querySelector('#reset')
+      let clickCount = 0;
+
+      botao.addEventListener('click', () => {
+        clickCount += 1
+        numberClicks.innerHTML = clickCount
+      })
+
+      botaoReset.addEventListener('click', () => {
+        clickCount = 0
+        numberClicks.innerHTML = 0
+      })
+    }
+    contagemClicks()
+
+  </script>
+</body>
+
+</html>
