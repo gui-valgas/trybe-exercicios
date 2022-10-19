@@ -72,3 +72,45 @@ const verificaPar = (object, keyName, keyValue) => {
   return ePar;
 }
 console.log(verificaPar(lesson2,'professor','Carlos'));
+
+// EXERCICIO BONUS:
+// Utilizando o objeto (allLesson), crie uma função para contar quantos estudantes assistiram às aulas de Matemática.
+
+const checkStudentsMath = (object) => {
+  let total = 0;
+  const arrayKeys = Object.keys(object);
+  for (let index = 0; index < arrayKeys.length; index += 1) {
+    if (object[arrayKeys[index]].materia === 'Matemática') {
+    total += object[arrayKeys[index]].numeroEstudantes
+    }
+  }
+  return total;
+}
+console.log(checkStudentsMath(allLessons));
+
+//Utilizando o objeto (allLesson), crie uma função que deverá retornar um objeto que representa o 
+//relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes.
+const info = (object, nome) => {
+  const allLessons = [];
+  let allStudents = 0;
+  const arrayValues = Object.values(object);
+  for (let index = 0; index < arrayValues.length; index += 1) {
+    if (arrayValues[index].professor === nome) {
+      allLessons.push(arrayValues[index].materia);
+      allStudents += arrayValues[index].numeroEstudantes
+    }
+  }
+  return { aulas: allLessons, estudantes: allStudents}
+
+}
+
+
+const relatorio = (object, nome) => {
+  const relatorio = {};
+  relatorio.professor = nome;
+
+  Object.assign(relatorio, info(allLessons, nome));
+  return relatorio;
+}
+
+console.log(relatorio(allLessons, 'Maria Clara'))
