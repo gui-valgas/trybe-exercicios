@@ -11,5 +11,6 @@ describe('teste da função encode e decode', () => {
   })
   test('verifica o retorno do mesmo número de caracteres no retorno da função', () => {
     expect(encode('aurelio').length).toEqual(7);
+    expect(decode('15r2l34').length).toEqual
   })
 })
