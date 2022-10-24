@@ -4,9 +4,8 @@ const string2 = () => 'Bora tomar café!!';
 
 const string3 = () => 'Partiu dormir!!';
 
-const doingThings = (func) => {
-  const retorno = func();
-  console.log(retorno);
+const doingThings = (callback) => {
+  return console.log(callback());
 }
 
 doingThings(string1);
