@@ -13,7 +13,7 @@ botao.addEventListener('click', (event) => {
     cpf: validator.isTaxID(campoDeTexto.value, 'pt-BR'),
     hexColor: validator.isHexColor(campoDeTexto.value),
     email: validator.isEmail(campoDeTexto.value),
-    uuid: validator.isUUID(campoDeTexto.value, UUID_VERSION),
+    divisibleBy4: validator.isDivisibleBy(campoDeTexto.value, 4),
     url: validator.isURL(campoDeTexto.value),
   };
   textoDeSaida.innerHTML = `A validação retornou ${campos[seletor.value]}`;
