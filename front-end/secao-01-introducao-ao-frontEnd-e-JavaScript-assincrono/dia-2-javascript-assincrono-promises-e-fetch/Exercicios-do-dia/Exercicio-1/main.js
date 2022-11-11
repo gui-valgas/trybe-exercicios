@@ -20,4 +20,10 @@ fetch(`${BASE_URL}/${id}.json`)
     img.src = data.images.lg;
     name.innerHTML = data.name;
   })
+  .catch((error) => Swal.fire({
+    title: 'Herói não encontrado!',
+    text: 'Heroi ocupado no momento, tente novamente!',
+    icon: 'error',
+    confirmButtonText: 'Beleza!'
+  }))
 })
