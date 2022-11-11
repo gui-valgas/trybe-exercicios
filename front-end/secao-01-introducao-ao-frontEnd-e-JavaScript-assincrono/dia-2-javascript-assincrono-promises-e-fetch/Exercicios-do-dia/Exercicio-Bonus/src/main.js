@@ -10,6 +10,7 @@ dogBtn.addEventListener('click', (event) => {
   fetch(dogUrl)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data)
       img.src = data.message
     })
 })
