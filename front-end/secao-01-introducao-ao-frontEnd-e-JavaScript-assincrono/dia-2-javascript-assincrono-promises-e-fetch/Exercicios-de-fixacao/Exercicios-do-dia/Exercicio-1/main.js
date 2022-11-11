@@ -1,4 +1,5 @@
 import Swal from 'sweetalert2'
+import './styles.css'
 
 const img = document.querySelector('#image');
 const name = document.querySelector('#name');
@@ -22,8 +23,8 @@ fetch(`${BASE_URL}/${id}.json`)
   })
   .catch((error) => Swal.fire({
     title: 'Herói não encontrado!',
-    text: 'Heroi ocupado no momento, tente novamente!',
-    icon: 'error',
+    text: 'Herói ocupado no momento, tente novamente!',
+    icon: 'warning',
     confirmButtonText: 'Beleza!'
   }))
 })
