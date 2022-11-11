@@ -13,7 +13,7 @@ async function handleClick() {
     const result = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
     const data = await result.json();
 
-    preEl.innerHTML = JSON.stringify(data)
+    preEl.innerHTML = JSON.stringify(data) // Retorna CEP, logradouro, complemento, bairro, localidade, uf, ibge, ddd e siafi.
     return data;
   } catch (error) {
     return Swal.fire({
@@ -23,4 +23,4 @@ async function handleClick() {
     })
   }
 }
-// cep, logradouro, complemento, bairro, localidade, uf
+
