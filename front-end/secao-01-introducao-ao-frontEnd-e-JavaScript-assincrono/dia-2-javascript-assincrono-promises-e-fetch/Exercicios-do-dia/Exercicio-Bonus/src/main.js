@@ -10,6 +10,7 @@ dogBtn.addEventListener('click', (event) => {
   fetch(dogUrl)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data)
       img.src = data.message
     })
 })
@@ -27,6 +28,7 @@ surpriseBtn.addEventListener('click', () => {
   const dogUrl = 'https://dog.ceo/api/breeds/image/random';
   const catUrl = 'https://aws.random.cat/meow';
 
+  // utilizando promise.any
   Promise.any([
     fetch(dogUrl),
     fetch(catUrl),
