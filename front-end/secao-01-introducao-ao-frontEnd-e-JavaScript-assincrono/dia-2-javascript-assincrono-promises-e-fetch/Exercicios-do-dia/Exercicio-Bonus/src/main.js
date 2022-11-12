@@ -1,3 +1,4 @@
+import './styles.css'
 
 const dogBtn = document.querySelector('#dogBtn');
 const catBtn = document.querySelector('#catBtn');
@@ -28,7 +29,6 @@ surpriseBtn.addEventListener('click', () => {
   const dogUrl = 'https://dog.ceo/api/breeds/image/random';
   const catUrl = 'https://aws.random.cat/meow';
 
-  // utilizando promise.any
   Promise.any([
     fetch(dogUrl),
     fetch(catUrl),

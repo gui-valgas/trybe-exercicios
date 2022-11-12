@@ -1,0 +1,61 @@
+body{
+ margin: 0;
+ font-family: fuzzy bubbles;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: rgb(156, 211, 4);
+  text-shadow: 2px 2px 5px rgb(7, 7, 7)
+}
+
+.background {
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+#buttons-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+#dogBtn, #catBtn, #surprise {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: fuzzy bubbles;
+  color: green;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(193, 218, 233);
+  padding: 10px 15px;
+  box-shadow: 2px 2px 10px rgb(43, 42, 42);
+  width: 300px;
+}
+
+
+#dogBtn:hover, #catBtn:hover, #surprise:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 10px white;
+  transition: all 0.3s ease-in-out;
+
+}
+
+#img-container {
+  display: flex;
+  justify-content: center;
+}
+
+#image {
+border-radius: 20px;
+box-shadow: 1px 1px 20px rgb(245, 248, 246);
+}
