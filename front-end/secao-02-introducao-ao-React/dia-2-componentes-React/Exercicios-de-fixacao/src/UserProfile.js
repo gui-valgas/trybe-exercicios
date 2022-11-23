@@ -7,8 +7,8 @@ class UserProfile extends React.Component {
     const { user } = this.props;
     return (
       <div>
-        <p> { user.name } </p>
-        <p> { user.email } </p>
+        <p className="name"> { user.name } </p>
+        <p className="email"> { user.email } </p>
         <Image source={ user.avatar } alternativeText="User avatar" />
       </div>
     );
