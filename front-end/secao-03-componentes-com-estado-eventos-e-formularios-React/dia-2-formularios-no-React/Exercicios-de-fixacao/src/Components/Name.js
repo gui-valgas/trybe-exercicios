@@ -8,7 +8,11 @@ class Name extends React.Component {
     return (
       <label htmlFor="name">
         Nome:
-        <input name="nome" type="text" value={value} onChange={handleChange} />
+        <input
+          name="nome"
+          type="text"
+          value={value} 
+          onChange={handleChange} />
         {!value ? 'O nome precisa ser preenchido' : ''}
         {value.length > maxCaracteres ? 'O nome atingiu o limite de caracteres' : ''}
       </label>
