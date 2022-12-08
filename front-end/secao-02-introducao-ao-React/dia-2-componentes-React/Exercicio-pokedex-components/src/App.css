@@ -8,22 +8,39 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
+  background-color: rgb(244, 247, 80);
 }
 
 h1 {
   text-align: center;
+  font-size: 50px;
+  font-family: fuzzy bubbles;
+}
+
+img {
+  background-color: rgb(244, 247, 80);
+  border-radius: 100%;
+  box-shadow: 1px 1px 10px rgb(12, 12, 12);
 }
 
 .pokemon {
   align-items: center;
   border: 1px gray solid;
   border-radius: 10px;
+  font-family: chakra petch;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(261deg, rgba(245,204,37,1) 0%, rgba(244,17,17,1) 35%, rgba(156,30,30,1) 100%);
   display: flex;
   flex: 1 1 0;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 10px;
   min-width: 240px;
+}
+
+.pokemon:hover {
+  box-shadow: 1px 1px 1px 5px white;
 }
 
 .pokedex {
