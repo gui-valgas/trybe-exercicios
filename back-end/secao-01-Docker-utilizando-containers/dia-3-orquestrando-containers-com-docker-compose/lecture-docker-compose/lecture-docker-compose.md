@@ -176,7 +176,7 @@ _Podemos deixar nítido que as imagens precisam ser construídas novamente usand
 
 Se quisermos descer nossos serviços, podemos utilizar o comando docker-compose down. Com ele, todos os containers serão parados e removidos.
 
-## Criando Volumes
+## **Criando Volumes**
 
 Os volumes nos permitem persistir arquivos entre execuções dos nossos serviços. Essa funcionalidade é super importante quando subimos serviços como banco de dados, onde precisamos manter os dados caso o serviço seja reiniciado.
 
@@ -211,12 +211,12 @@ volumes:
   dados-do-banco:
 ```
 
-## Ilustração da integração entre volumes e serviços no Compose
+## **Ilustração da integração entre volumes e serviços no Compose**
 
 <img src="https://content-assets.betrybe.com/prod/Integra%C3%A7%C3%A3o%20entre%20volumes%20e%20servi%C3%A7os%20no%20Compose.png">  
 
 
-## Criando redes virtuais 
+## **Criando redes virtuais**
 
 o Compose nos permite criar múltiplas redes virtuais entre os serviços. Isso é muito importante, pois nos permite criar arquiteturas mais seguras, por exemplo:
 
