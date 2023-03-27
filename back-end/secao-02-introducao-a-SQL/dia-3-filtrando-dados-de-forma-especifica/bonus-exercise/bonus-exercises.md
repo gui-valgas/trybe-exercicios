@@ -1,5 +1,7 @@
 # Resolução dos exercícios Bônus propostos no README.md
 
+## Respostas:
+
 # Exercício 1
 > Escreva uma query para exibir todas as informações de todos os cientistas que possuam a letra e em seu nome.
 

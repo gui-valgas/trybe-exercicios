@@ -1,5 +1,7 @@
 # Resolução dos exercícios propostos no README
 
+## Respostas:
+
 ## Exercício 1
 > Vamos lá! Faça uma consulta na tabela item que retorne todos os dados em que a coluna `name` comece com as letras `GR`.
 
