@@ -1,5 +1,7 @@
 # Resolução dos exercícios propostos no README.md
 
+## Respostas:
+
 ## Exercício 1
 > Escreva uma query para exibir a peça e o preço de tudo que é provido pela empresa RBT.
 

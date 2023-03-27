@@ -1,5 +1,7 @@
 # Resolução dos exercícios propostos no README
 
+## Respostas:
+
 ## Exercício 1
 > Escreva uma query para exibir a string “This is SQL Exercise, Practice and Solution”.
 
