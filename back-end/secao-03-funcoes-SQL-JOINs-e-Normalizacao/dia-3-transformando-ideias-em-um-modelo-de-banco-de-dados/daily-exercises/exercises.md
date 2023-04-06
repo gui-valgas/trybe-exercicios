@@ -79,7 +79,9 @@ CREATE TABLE gerente(
 
 > Criação da tabela de cuidador:
   - Relacionando cada cuidador a seu gerente usando uma chave estrangeira (`foreign key`)
-  <br>  
+
+<br> 
+
 ```SQL
   CREATE TABLE cuidador(
     cuidador_id INT PRIMARY KEY AUTO_INCREMENT,
