@@ -1,0 +1,23 @@
+{
+  "name": "daily-exercises",
+  "version": "1.0.0",
+  "description": "## Exercício 1 > Qual é a função do código de status `400` e `422`? - A função do _status code_ **400** indica _bad request_, devido a sintaxe inválida - A função do _status code_ **422** indica que o servidor entende o tipo de conteúdo da entidade da requisição, e a sintaxe da requisição esta correta, mas não foi possível processar as instruções presentes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "eslint-config-trybe-backend": "1.0.1",
+    "nodemon": "2.0.15"
+  }
+}
