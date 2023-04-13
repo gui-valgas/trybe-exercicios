@@ -1,0 +1,18 @@
+{
+  "name": "daily-exercises",
+  "version": "1.0.0",
+  "description": "## Exercício 1 > Uma startup de Ecoturismo te procurou para construir uma aplicação back-end que auxilie na criação e compartilhamento de locais ainda não registrados na natureza. O objetivo é valorizar e promover a capacidade turística do Brasil e os principais requisitos da API que essa startup solicitou são: - Cadastrar novas atividades de ecoturismo com as seguintes informações:   - Nome da atividade;   - Preço;   - Descrição: contendo avaliação, dificuldade e data de criação da atividade.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
