@@ -1,4 +1,4 @@
-# Boas-vindas ao repositório do exercício sobre `Express com MySQL`
+# Exercício Express com MySQL
 
 Esse é o exercício referente ao conteúdo de `Express com MySQL` e tem como objetivo consolidar os seguintes objetivos de aprendizagem:
 
@@ -8,14 +8,6 @@ Esse é o exercício referente ao conteúdo de `Express com MySQL` e tem como ob
 - Escrever consultas SQL utilizando prepared statements;
 - Desenvolver um CRUD com express integrado ao MySQL;
 - Escrever testes de integração com mock do banco de dados.
-
-### Orientações
-
-Crie um fork desse projeto e para isso siga esse [tutorial de como realizar um fork](https://docs.github.com/pt/get-started/quickstart/contributing-to-projects).
-
-Feito o fork, clone o repositório criado para o seu computador.
-
-Rode o `npm install` para baixar as dependências do projeto de forma apropriada.
 
 ### Antes de começar os exercícios
 
@@ -99,8 +91,6 @@ Segue uma descrição do que é esperado que cada endpoint realize:
 ```
 
 Ao final dos exercícios é esperado ter todos os **endpoints** funcionando conforme a especificação acima e que os dados sobre as tarefas sejam armazenados e consultados em um servidor MySQL.
-
-**OBS 01**: Os retornos dos **endpoints** `POST /tasks`, `PUT /tasks/:id` e `DELETE /tasks/:id` podem ser implementados da forma que for conveniente.
 
 ### Exercícios
 
