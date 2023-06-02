@@ -2,7 +2,6 @@
 
 ## Exercises part 1:
 
-
 - _O código a seguir será usado nos da pasta exercises-part-1 (exercícios 1, 2 e 3)_
 
 O programa retorna informações relacionadas ao cep de uma pessoa e tem duas funcionalidades:
