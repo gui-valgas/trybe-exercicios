@@ -43,7 +43,3 @@ Adicionar os _endpoints_:
 - `DELETE /plants/:id`: deleta uma planta específica;  
 
 Realizar as validações necessárias para os novos endpoints;
-
-## Bônus
-
-- Crie um banco de dados para persistir os dados das plantas.
