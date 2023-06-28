@@ -1,0 +1,10 @@
+helicóptero
+carro
+navio
+video
+futebol
+hospital
+paralelepípedo
+polícia
+computador
+javascript

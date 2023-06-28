@@ -7,3 +7,4 @@ Exemplo: O pokemon sorteado pelo programa é `butterfree`; a pessoa usuária chu
 
 Você pode utilizar o método `choice` do modulo `random` para sortear aleatoriamente um pokemon. Ex: `random.choice(pokemon)` -> `{"name": "Pikachu" }`.
 
+Arquivo json: _pokemons.json_
