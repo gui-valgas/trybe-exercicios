@@ -22,7 +22,7 @@ Todos os atributos devem ser privados.
 ## Exercício 2: Implemente uma `classe Estatistica`
 - Ela deve possuir um atributo `numbers` (uma lista de números) com três métodos: um que calcula a média, um que calcula a mediana mediana e outro que calcula a moda de uma lista de números.
 
-<img src=https://content-assets.betrybe.com/prod/9f3d4b0b-258e-435e-a9cf-65e7491b2d39-Diagrama%20de%20classes%20da%20Estat%C3%ADstica.png width=200px>
+<img src=https://content-assets.betrybe.com/prod/9f3d4b0b-258e-435e-a9cf-65e7491b2d39-Diagrama%20de%20classes%20da%20Estat%C3%ADstica.png width=201px>
 
 ## Exercício 3: Implemente as classes das figuras geométricas
 > Com base no diagrama a seguir, implemente as classes das figuras geométricas.
