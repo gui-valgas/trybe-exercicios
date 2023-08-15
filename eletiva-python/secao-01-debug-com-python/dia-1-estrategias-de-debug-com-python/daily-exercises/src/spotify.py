@@ -2,7 +2,7 @@ import csv
 import sys
 from typing import Dict, List
 
-DATA_PATH = "dia-1/python-027-python-exercicio-the-bug-hunting/data/spotify.csv"
+DATA_PATH = "dia-1-estrategias-de-debug-com-python/daily-exercises/python-027-python-exercicio-the-bug-hunting/data/spotify.csv"  # noqa: E501
 
 
 def get_command_help(data_path) -> str:

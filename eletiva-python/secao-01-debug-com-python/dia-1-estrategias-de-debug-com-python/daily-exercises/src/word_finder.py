@@ -14,7 +14,7 @@ def read_file_lines(file_path):
 
 
 def main():
-    file_path = "dia-1/python-027-python-exercicio-the-bug-hunting/data/word_finder.txt"
+    file_path = "dia-1-estrategias-de-debug-com-python/daily-exercises/python-027-python-exercicio-the-bug-hunting/data/word_finder.txt"  # noqa: E501
     search_word = "python"
     occurrences = lines_with_word_occurrences(file_path, search_word)
     print(
