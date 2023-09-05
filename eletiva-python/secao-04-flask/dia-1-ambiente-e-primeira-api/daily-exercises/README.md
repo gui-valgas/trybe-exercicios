@@ -1,5 +1,8 @@
 # Exercícios - Flask: Ambiente e primeira API
-
+> Para subir a aplicação rode o seguinte comando:
+```py
+docker compose up flask-api
+```
 
 ## Exercício 1
 Crie uma Blueprint Controller semelhante à API de piadas, para criar uma coleção de sugestões de músicas na base de dados.
