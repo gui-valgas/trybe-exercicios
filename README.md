@@ -6,3 +6,4 @@
 * ## Front End  
 * ## Back End  
 * ## Ciência da Computação
+* ## Eletiva - Python
